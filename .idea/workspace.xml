@@ -4,35 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add loginview and admin control system">
-      <change afterPath="$PROJECT_DIR$/src/business/HotelFeatureManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/HotelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/PensionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/ReservationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/RoomFeatureManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/RoomManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/SeasonManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/HotelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/HotelFeatureDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/PensionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/ReservationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/RoomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/RoomFeatureDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/SeasonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/HotelFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Pension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/RoomFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Season.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/EmployeeView.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/EmployeeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/HotelView.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/HotelView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table">
+      <change afterPath="$PROJECT_DIR$/src/view/RoomView.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/RoomView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/HotelView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HotelView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/HotelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HotelView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/IdeaProjects/tourizmAgency",
+    "last_opened_file_path": "C:/Users/PC/IdeaProjects/Tourism_Agency",
     "onboarding.tips.debug.path": "C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
@@ -109,11 +87,20 @@
       <option name="project" value="LOCAL" />
       <updated>1718742289378</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table">
+      <option name="closed" value="true" />
+      <created>1718804605864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718804605864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add loginview and admin control system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add loginview and admin control system" />
+    <MESSAGE value="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table" />
   </component>
 </project>
