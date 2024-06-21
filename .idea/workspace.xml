@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table">
-      <change afterPath="$PROJECT_DIR$/src/view/RoomView.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/RoomView.java" afterDir="false" />
+    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add Room View and  Employee operations edited.">
+      <change afterPath="$PROJECT_DIR$/src/view/FilteredRoomView.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FilteredRoomView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ReservationView.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ReservationView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HotelView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HotelView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/HotelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HotelView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/IdeaProjects/Tourism_Agency",
-    "onboarding.tips.debug.path": "C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/Tourism_Agency&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\IdeaProjects\Tourism_Agency" />
@@ -95,12 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718804605864</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Room View and  Employee operations edited.">
+      <option name="closed" value="true" />
+      <created>1718881110904</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718881110904</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add loginview and admin control system" />
     <MESSAGE value="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table" />
+    <MESSAGE value="Add Room View and  Employee operations edited." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Room View and  Employee operations edited." />
   </component>
 </project>
