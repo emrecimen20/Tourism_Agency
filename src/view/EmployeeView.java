@@ -2,15 +2,13 @@ package view;
 
 import business.*;
 import core.Helper;
-import entity.Hotel;
-import entity.Room;
-import entity.RoomFeature;
-import entity.User;
+import entity.*;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class EmployeeView extends Layout {
@@ -32,10 +30,12 @@ public class EmployeeView extends Layout {
     private DefaultTableModel tmbl_hotels = new DefaultTableModel();
     private final DefaultTableModel tmbl_seasons = new DefaultTableModel();
     private final DefaultTableModel tmbl_rooms = new DefaultTableModel();
+    private final DefaultTableModel tmbl_reserv = new DefaultTableModel();
     private HotelManager hotelManager;
     private JPopupMenu hotel_menu;
     private JPopupMenu season_menu;
     private JPopupMenu room_menu;
+    private JPopupMenu reserv_menu;
     private UserManager userManager;
     private Object[] col_hotel;
     private ReservationManager reservationManager;
@@ -78,8 +78,66 @@ public class EmployeeView extends Layout {
         loadRoomTable();
         loadRoomComponent();
 
+        loadReservationTable();
+        loadReservationComponent();
+
+        loadComponent();
 
 
+    }
+
+    private void loadComponent() {
+        this.btn_emp_logout.addActionListener(e -> {
+            dispose();
+            new LoginView();
+        });
+    }
+    private void loadReservationComponent() {
+        JPopupMenu reserv_menu = new JPopupMenu();
+        tableRowSelect(this.tbl_emp_reserv,reserv_menu);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        reserv_menu.add("Güncelle").addActionListener(e -> {
+            int selectReservId = this.getTableSelectedRow(tbl_emp_reserv, 0);
+            Reservation reservation = this.reservationManager.getById(selectReservId);
+            ArrayList<Room> room = this.roomManager.getRoomsWithDetails(reservation.getReservRoomId(),false);
+            Hotel hotel = this.hotelManager.getById(reservation.getReservHotelId());
+            room.get(0).setHotel(hotel);
+            String adultCount = String.valueOf(reservation.getAdultCount());
+            String childCount = String.valueOf(reservation.getChildCount());
+            String checkInReserve = reservation.getCheckinDate().format(formatter);
+            String checkOutReserve = (reservation.getCheckOutDate().format(formatter));
+
+            ReservationView reservationView = new ReservationView(reservation, room.get(0), adultCount, childCount, checkInReserve, checkOutReserve);
+            reservationView.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosed(WindowEvent e) {
+                    loadReservationTable();
+
+                }
+            });
+        });
+
+        reserv_menu.add("Sil").addActionListener(e -> {
+            if (Helper.confirm("sure")) {
+                int selectReservId = this.getTableSelectedRow(tbl_emp_reserv, 0);
+                if (this.reservationManager.delete(selectReservId)) {
+                    loadRoomTable();
+                    loadReservationTable();
+                    Helper.showMessage("done");
+                } else {
+                    Helper.showMessage("error");
+                }
+            }
+        });
+        this.tbl_emp_reserv.setComponentPopupMenu(reserv_menu);
+    }
+    public void loadReservationTable() {
+        Object[] col_reserv = new Object[]{"ID", "Otel İsmi", "Oda Tipi", "Check-in", "Check-out", "Misafir TC No",
+                "Misafir İsim", "Misafir Numara", "Misafir Mail", "Yetişkin Misafir", "Çocuk Misafir", "Total Fiyat (TL)"};
+        ArrayList<Object[]> reservList = this.reservationManager.getForTable(col_reserv.length, this.reservationManager.findAll());
+        createTable(this.tmbl_reserv, this.tbl_emp_reserv, col_reserv, reservList);
     }
 
     private void loadRoomComponent() {
@@ -115,6 +173,7 @@ public class EmployeeView extends Layout {
                         roomFeatureManager.delete(selectRoomId);
                         Helper.showMessage("done");
                         loadRoomTable();
+                        loadReservationTable();
 
                     } else {
                         Helper.showMessage("error");
@@ -164,6 +223,7 @@ public class EmployeeView extends Layout {
                             Helper.showMessage("done");
                             loadSeasonTable();
                             loadRoomTable();
+                            loadReservationTable();
 
                         } else {
                             Helper.showMessage("error");
@@ -242,6 +302,7 @@ public class EmployeeView extends Layout {
                     loadHotelTable();
                     loadSeasonTable();
                     loadRoomTable();
+                    loadReservationTable();
 
                 } else {
                     Helper.showMessage("error");
@@ -255,7 +316,7 @@ public class EmployeeView extends Layout {
             roomView.addWindowListener(new WindowAdapter() {
                 @Override
                 public void windowClosed(WindowEvent e) {
-
+                    loadRoomTable();
                 }
             });
         });

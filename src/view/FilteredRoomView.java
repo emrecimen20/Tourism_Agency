@@ -22,6 +22,7 @@ public class FilteredRoomView extends Layout {
     private String child;
     private String checkIn;
     private String checkOut;
+    ReservationView reservationView =null;
 
     public FilteredRoomView(String adult, String child, String checkIn, String checkOut) {
         this.add(container);
@@ -46,7 +47,7 @@ public class FilteredRoomView extends Layout {
         this.searched_room_menu.add("Rezervasyon Yap").addActionListener(e -> {
 
             int selectSeearchedRoomId = this.getTableSelectedRow(tbl_searched_room, 0);
-            ReservationView reservationView = null;
+
             Reservation reservation = new Reservation();
 
             for (Room room : rooms) {
@@ -63,6 +64,7 @@ public class FilteredRoomView extends Layout {
                     }
                 });
             }
+
         });
         this.tbl_searched_room.setComponentPopupMenu(searched_room_menu);
     }
