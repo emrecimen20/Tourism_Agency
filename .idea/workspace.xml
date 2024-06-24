@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add loadRoomTable, loadRoomComponent and Reservation register form">
-      <change afterPath="$PROJECT_DIR$/src/core/ComboItem.java" afterDir="false" />
+    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add Reservation Table and  delete reservation operation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EmployeeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/FilteredRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FilteredRoomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ReservationView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ReservationView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ReservationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ReservationView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,27 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/Tourism_Agency&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/PC/Rent_A_Car_System",
+    "onboarding.tips.debug.path": "C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\IdeaProjects\Tourism_Agency" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Tourism_Agency" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718971154916</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Reservation Table and  delete reservation operation.">
+      <option name="closed" value="true" />
+      <created>1719064114118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719064114118</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,6 +128,7 @@
     <MESSAGE value="Add Employee interface(Hotels,Seasons,Rooms,Reservations) and show hotel table" />
     <MESSAGE value="Add Room View and  Employee operations edited." />
     <MESSAGE value="Add loadRoomTable, loadRoomComponent and Reservation register form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add loadRoomTable, loadRoomComponent and Reservation register form" />
+    <MESSAGE value="Add Reservation Table and  delete reservation operation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Reservation Table and  delete reservation operation." />
   </component>
 </project>

@@ -92,16 +92,17 @@ public class EmployeeView extends Layout {
             new LoginView();
         });
     }
+
     private void loadReservationComponent() {
         JPopupMenu reserv_menu = new JPopupMenu();
-        tableRowSelect(this.tbl_emp_reserv,reserv_menu);
+        tableRowSelect(this.tbl_emp_reserv, reserv_menu);
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         reserv_menu.add("Güncelle").addActionListener(e -> {
             int selectReservId = this.getTableSelectedRow(tbl_emp_reserv, 0);
             Reservation reservation = this.reservationManager.getById(selectReservId);
-            ArrayList<Room> room = this.roomManager.getRoomsWithDetails(reservation.getReservRoomId(),false);
+            ArrayList<Room> room = this.roomManager.getRoomsWithDetails(reservation.getReservRoomId(), false);
             Hotel hotel = this.hotelManager.getById(reservation.getReservHotelId());
             room.get(0).setHotel(hotel);
             String adultCount = String.valueOf(reservation.getAdultCount());
@@ -133,6 +134,7 @@ public class EmployeeView extends Layout {
         });
         this.tbl_emp_reserv.setComponentPopupMenu(reserv_menu);
     }
+
     public void loadReservationTable() {
         Object[] col_reserv = new Object[]{"ID", "Otel İsmi", "Oda Tipi", "Check-in", "Check-out", "Misafir TC No",
                 "Misafir İsim", "Misafir Numara", "Misafir Mail", "Yetişkin Misafir", "Çocuk Misafir", "Total Fiyat (TL)"};
@@ -142,7 +144,7 @@ public class EmployeeView extends Layout {
 
     private void loadRoomComponent() {
         JPopupMenu room_menu = new JPopupMenu();
-        tableRowSelect(this.tbl_emp_rooms,room_menu);
+        tableRowSelect(this.tbl_emp_rooms, room_menu);
 
 
         room_menu.add("Güncelle").addActionListener(e -> {
@@ -152,7 +154,7 @@ public class EmployeeView extends Layout {
             if (this.reservationManager.getByRoomId(selectRoomId) != null) {
                 Helper.showMessage("cannotUpdate");
             } else {
-                RoomView roomView = new RoomView(this.roomManager.getRoomsWithDetails(selectRoomId,false).get(0), this.hotelManager.getById(selectHotelId));
+                RoomView roomView = new RoomView(this.roomManager.getRoomsWithDetails(selectRoomId, false).get(0), this.hotelManager.getById(selectHotelId));
                 roomView.addWindowListener(new WindowAdapter() {
                     @Override
                     public void windowClosed(WindowEvent e) {
@@ -188,7 +190,7 @@ public class EmployeeView extends Layout {
         Object[] col_room = new Object[]{"ID", "Otel", "Otel ID", "Sezon Başlangıcı", "Sezon Bitişi", "Pansiyon Tipi",
                 "Oda Stoğu", "Yetişkin Gecelik Fiyat (TL)", "Çocuk Gecelik Fiyat (TL)", "Oda Tipi", "Oda Özellikleri"};
 
-        ArrayList<Object[]> roomList = this.roomManager.getForTable(col_room.length, this.roomManager.getRoomsWithDetails(-1,false));
+        ArrayList<Object[]> roomList = this.roomManager.getForTable(col_room.length, this.roomManager.getRoomsWithDetails(-1, false));
         createTable(this.tmbl_rooms, this.tbl_emp_rooms, col_room, roomList);
     }
 
@@ -352,7 +354,7 @@ public class EmployeeView extends Layout {
                 @Override
                 public void windowClosed(WindowEvent e) {
                     loadRoomTable();
-
+                    loadReservationTable();
                 }
             });
 

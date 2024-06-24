@@ -1,5 +1,6 @@
 package view;
 
+import business.ReservationManager;
 import business.RoomManager;
 import entity.Reservation;
 import entity.Room;
@@ -22,7 +23,8 @@ public class FilteredRoomView extends Layout {
     private String child;
     private String checkIn;
     private String checkOut;
-    ReservationView reservationView =null;
+
+
 
     public FilteredRoomView(String adult, String child, String checkIn, String checkOut) {
         this.add(container);
@@ -33,6 +35,8 @@ public class FilteredRoomView extends Layout {
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
+
+
 
     public void loadSearchedRoomTable(ArrayList<Object[]> roomReservationRow) {
         this.col_searched_room = new Object[]{"ID", "Otel", "Otel ID", "Sezon Başlangıcı", "Sezon Bitişi", "Pansiyon Tipi",
@@ -47,7 +51,7 @@ public class FilteredRoomView extends Layout {
         this.searched_room_menu.add("Rezervasyon Yap").addActionListener(e -> {
 
             int selectSeearchedRoomId = this.getTableSelectedRow(tbl_searched_room, 0);
-
+            ReservationView reservationView= null;
             Reservation reservation = new Reservation();
 
             for (Room room : rooms) {
@@ -60,6 +64,7 @@ public class FilteredRoomView extends Layout {
                 reservationView.addWindowListener(new WindowAdapter() {
                     @Override
                     public void windowClosed(WindowEvent e) {
+
                         dispose();
                     }
                 });
