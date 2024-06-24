@@ -3,7 +3,6 @@ package business;
 import core.Helper;
 import dao.HotelDao;
 import entity.*;
-
 import java.util.ArrayList;
 
 public class HotelManager {
@@ -14,7 +13,9 @@ public class HotelManager {
     }
 
     public ArrayList<Object[]> getForTable(int size, ArrayList<Hotel> hotelList) {
+
         ArrayList<Object[]> hotelObjList = new ArrayList<>();
+
         for (Hotel hotel : hotelList) {
             int i = 0;
             Object[] rowObject = new Object[size];
@@ -100,7 +101,7 @@ public class HotelManager {
 
     public boolean delete(int hotelId) {
         if (this.getById(hotelId) == null) {
-            Helper.showMessage("kayıt bulunamadı");
+            Helper.showMessage("Kayıt bulunamadı");
             return false;
         }
         return this.hotelDao.delete(hotelId);

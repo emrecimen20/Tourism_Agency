@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class Layout extends JFrame {
 
+    // All the features we will use in other views.
     public void guiInitialize(int width, int height) {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setTitle("Turizm Acente");
@@ -18,6 +19,7 @@ public class Layout extends JFrame {
         this.setVisible(true);
     }
 
+    // Table creating method.
     public void createTable(DefaultTableModel model, JTable table, Object[] columns, ArrayList<Object[]> rows) {
         model.setColumnIdentifiers(columns);
         table.setModel(model);
@@ -36,11 +38,12 @@ public class Layout extends JFrame {
         }
     }
 
+    // Getting the selected row.
     public int getTableSelectedRow(JTable table, int index) {
         return Integer.parseInt(table.getValueAt(table.getSelectedRow(), index).toString());
     }
 
-
+    // Mouse operations and popup menu operations on the selected row in the table.
     public void tableRowSelect(JTable table,JPopupMenu menu){
         table.addMouseListener(new MouseAdapter() {
             @Override

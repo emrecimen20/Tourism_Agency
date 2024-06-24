@@ -175,7 +175,7 @@ public class SeasonDao {
                     }
                 }
 
-                // Eğer veritabanındaki satır listede yoksa sil
+                // If the row in the database is not in the list, delete it.
                 if (!found && (seasonIds.isEmpty() || !seasonIds.contains(seasonId))) {
                     PreparedStatement deleteStatement = this.connection.prepareStatement(deleteQuery);
                     deleteStatement.setInt(1, hotelId);

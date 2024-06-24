@@ -3,10 +3,9 @@ package business;
 import core.Helper;
 import dao.ReservationDao;
 import entity.*;
-
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Map;
+
 
 public class ReservationManager {
     private ReservationDao reservationDao;
@@ -28,7 +27,7 @@ public class ReservationManager {
             Helper.showMessage("error");
             return false;
         }
-        // Oda stoğunu güncelleme
+        // Room stock update process.
         int roomId = reservation.getReservRoomId();
         if (this.roomManager.updateRoomStock(roomId, -1) && this.reservationDao.save(reservation)) {
             return true;

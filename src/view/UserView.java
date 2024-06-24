@@ -42,7 +42,7 @@ public class UserView extends Layout {
                 this.user.setPassword(fld_user_pw.getText());
                 this.user.setRole((User.Role) this.cmb_user_role.getSelectedItem());
 
-                //kullanıcı güncelleme
+                // Update user.
                 if (this.user.getId() != 0) {
                     result = this.userManager.update(this.user);
                     if (result) {
@@ -53,7 +53,7 @@ public class UserView extends Layout {
                         Helper.showMessage("error");
                     }
                     dispose();
-                    //yeni kullanıcı ekleme
+                    // Add new user.
                 } else {
                     if (this.user.getId() == 0) {
                         result2 = userManager.save(user);

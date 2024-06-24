@@ -148,13 +148,13 @@ public class RoomFeatureDao {
                 insertStatement.executeUpdate();
             }
 
-            // Veritabanından tüm ilgili satırları al
+            // Get all relevant rows from database.
             PreparedStatement selectAllStatement = this.connection.prepareStatement(selectAllQuery);
             selectAllStatement.setInt(1, roomId);
             ResultSet resultSet = selectAllStatement.executeQuery();
 
 
-            // Silme işlemi
+            // Deleting operation.
             while (resultSet.next()) {
                 String featureName = resultSet.getString("feature_name");
                 String featureValue = resultSet.getString("feature_value");
@@ -171,7 +171,7 @@ public class RoomFeatureDao {
                     }
                 }
 
-                // Eğer veritabanındaki satır listede yoksa sil
+                // If the row in the database is not in the list, delete it.
                 if (!found) {
                     PreparedStatement deleteStatement = this.connection.prepareStatement(deleteQuery);
                     deleteStatement.setInt(1, roomId);

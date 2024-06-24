@@ -121,7 +121,7 @@ public class PensionDao {
         String deleteQuery = "DELETE FROM public.pension WHERE pension_hotel_id = ? AND pension_types = ?";
 
         try {
-            // Ekleme işlemleri
+            // Adding operations.
             for (Pension pension : selectedPensions) {
                 PreparedStatement insertStatement = this.connection.prepareStatement(insertQuery);
                 insertStatement.setInt(1, hotelId);
@@ -131,13 +131,13 @@ public class PensionDao {
                 insertStatement.executeUpdate();
             }
 
-            // Veritabanından tüm ilgili satırları al
+            // The process of retrieving all relevant rows from the database.
             PreparedStatement selectAllStatement = this.connection.prepareStatement(selectAllQuery);
             selectAllStatement.setInt(1, hotelId);
             ResultSet resultSet = selectAllStatement.executeQuery();
 
 
-            // Silme işlemi
+            // Deleting operations.
             while (resultSet.next()) {
                 String pensionType = resultSet.getString("pension_types");
                 int pensionId = resultSet.getInt("pension_id");
@@ -150,7 +150,7 @@ public class PensionDao {
 
                 }
 
-                // Eğer veritabanındaki satır listede yoksa sil
+                // If the row in the database is not in the list, delete it.
                 if (!found && (pensionIds.isEmpty() || !pensionIds.contains(pensionId))) {
                     PreparedStatement deleteStatement = this.connection.prepareStatement(deleteQuery);
                     deleteStatement.setInt(1, hotelId);

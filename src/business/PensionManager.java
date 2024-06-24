@@ -4,7 +4,6 @@ import core.Helper;
 import dao.PensionDao;
 import entity.HotelFeature;
 import entity.Pension;
-
 import java.util.ArrayList;
 
 public class PensionManager {
@@ -38,7 +37,7 @@ public class PensionManager {
 
     public boolean delete(int hotelId) {
         if (this.getPensionsByHotelId(hotelId) == null) {
-            Helper.showMessage("kayıt bulunamadı");
+            Helper.showMessage("Kayıt bulunamadı");
             return false;
         }
         return this.pensionDao.delete(hotelId);

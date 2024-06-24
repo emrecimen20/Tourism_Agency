@@ -53,12 +53,12 @@ public class ReservationView extends Layout {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        this.lbl_reserv_hotel_name.setText("<html><b>Otel:</b> " + room.getHotel().getHotelName() + "</html>");
-        this.lbl_reserv_room.setText("<html><b>Pansiyon Tipi:</b> " + room.getPension().getPensionType() +"</html>");
-        this.lbl_resrv_child.setText("<html><b>Çocuk Sayısı:</b> " + child + "</html>");
-        this.lbl_reserv_adult.setText("<html><b>Yetişkin Sayısı:</b> " + adult + "</html>");
-        this.lbl_checkout.setText("<html><b>Check-out:</b> " + this.checkOut + "</html>");
-        this.lbl_checkin.setText("<html><b>Check-in:</b> " + this.checkIn + "</html>");
+        this.lbl_reserv_hotel_name.setText("Otel :" + room.getHotel().getHotelName());
+        this.lbl_reserv_room.setText("Pansiyon :" + room.getPension().getPensionType());
+        this.lbl_resrv_child.setText("Çocuk Sayısı :" + child);
+        this.lbl_reserv_adult.setText("Yetişkin Sayısı :" + adult);
+        this.lbl_checkout.setText("Check-out :" + this.checkOut);
+        this.lbl_checkin.setText("Check-in :" + this.checkIn);
 
         LocalDate dateIn = LocalDate.parse(this.checkIn, formatter);
         LocalDate dateOut = LocalDate.parse(this.checkOut, formatter);
@@ -66,8 +66,8 @@ public class ReservationView extends Layout {
         int totalChildAdultPrice = Integer.parseInt(adult)  * room.getPriceAdult() + Integer.parseInt(child)  * room.getPriceChild();
         int totalPrice =  totalChildAdultPrice * totalDays;
 
-        this.lbl_reserv_total_prc.setText("<html><b>Toplam Tutar (TL):</b> " + totalPrice + "</html>");
-        this.lbl_reserv_season.setText("<html><b>Sezon:</b> " + this.room.getSeason().getStrtDate().format(formatter) + " - " + this.room.getSeason().getEndDate().format(formatter) + "</html>");
+        this.lbl_reserv_total_prc.setText("Toplam tutar :" + totalPrice);
+        this.lbl_reserv_season.setText("Sezon :" + this.room.getSeason().getStrtDate().format(formatter) + " - " + this.room.getSeason().getEndDate().format(formatter));
 
         StringBuilder roomFeatures = new StringBuilder();
         for(RoomFeature roomFeature: this.room.getRoomFeatures()) {
@@ -87,7 +87,7 @@ public class ReservationView extends Layout {
         if (roomFeatures.toString().endsWith(", ")) {
             roomFeatures = new StringBuilder(roomFeatures.substring(0, roomFeatures.length() - 2));
         }
-        this.lbl_reserv_room_features.setText("<html><b>Oda Özellikleri:</b> " + roomFeatures + "</html>");
+        this.lbl_reserv_room_features.setText("Oda Özellikleri :" + roomFeatures);
 
         StringBuilder hotelFeatures = new StringBuilder();
         for(HotelFeature hotelFeature: this.room.getHotel().getHotelFeatures()) {
@@ -97,7 +97,7 @@ public class ReservationView extends Layout {
         if (hotelFeatures.toString().endsWith(", ")) {
             hotelFeatures = new StringBuilder(hotelFeatures.substring(0, hotelFeatures.length() - 2));
         }
-        this.lbl_reserv_hotel_features.setText("<html><b>Tesis Özellikleri:</b> " + hotelFeatures + "</html>");
+        this.lbl_reserv_hotel_features.setText("Tesis Özellikleri :" + hotelFeatures);
 
         if (this.reservation.getReservId() != 0) {
             this.fld_reserv_name.setText(this.reservation.getGuestName());
@@ -131,7 +131,7 @@ public class ReservationView extends Layout {
                 this.reservation.setRoom(this.room);
                 this.reservation.setHotel(this.room.getHotel());
 
-                //güncelle
+                // Update
                 if (this.reservation.getReservId() != 0) {
                     result = this.reservationManager.update(reservation);
 
@@ -142,7 +142,7 @@ public class ReservationView extends Layout {
                         Helper.showMessage("error");
                     }
                 }  else {
-                    //yeni
+                    // New
                     if (this.reservation.getReservId() == 0) {
                         result2 = this.reservationManager.save(this.reservation);
                     }

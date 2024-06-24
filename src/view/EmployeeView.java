@@ -69,18 +69,23 @@ public class EmployeeView extends Layout {
             dispose();
         }
 
+        // Methods where we create a hotel table and perform hotel transactions.
         loadHotelTable();
         loadHotelComponent();
 
+        // Methods where we create a season table and perform season transactions.
         loadSeasonTable();
         loadSeasonComponent();
 
+        // Methods where we create a room table and perform room transactions.
         loadRoomTable();
         loadRoomComponent();
 
+        // Methods where we create a reservation table and perform reservation transactions.
         loadReservationTable();
         loadReservationComponent();
 
+        // Sign out process.
         loadComponent();
 
 

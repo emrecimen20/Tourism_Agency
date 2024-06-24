@@ -2,14 +2,11 @@ package business;
 
 import core.Helper;
 import dao.HotelFeatureDao;
-
-
 import entity.HotelFeature;
-
-
 import java.util.ArrayList;
 
 public class HotelFeatureManager {
+
     private final HotelFeatureDao hotelFeatureDao;
 
     public HotelFeatureManager() {
@@ -46,7 +43,7 @@ public class HotelFeatureManager {
 
     public boolean delete(int hotelId) {
         if (this.getFeaturesByHotelId(hotelId) == null) {
-            Helper.showMessage("kayıt bulunamadı");
+            Helper.showMessage("Kayıt bulunamadı");
             return false;
         }
         return this.hotelFeatureDao.delete(hotelId);

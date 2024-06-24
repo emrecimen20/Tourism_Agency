@@ -5,7 +5,6 @@ import dao.SeasonDao;
 import entity.HotelFeature;
 import entity.Pension;
 import entity.Season;
-
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 

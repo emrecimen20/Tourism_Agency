@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add Reservation Table and  delete reservation operation.">
+    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add project last version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/HotelFeatureManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/HotelFeatureManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/HotelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/HotelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/PensionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/PensionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/ReservationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/ReservationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/RoomFeatureManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/RoomFeatureManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/SeasonManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/SeasonManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PensionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PensionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/RoomFeatureDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/RoomFeatureDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/SeasonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SeasonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/EmployeeView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EmployeeView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/FilteredRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FilteredRoomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FilteredRoomView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FilteredRoomView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/HotelView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/HotelView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ReservationView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ReservationView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ReservationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ReservationView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UserView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +55,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/Rent_A_Car_System",
+    "last_opened_file_path": "C:/Users/PC/IdeaProjects/tourizmAgency",
     "onboarding.tips.debug.path": "C:/Users/PC/IdeaProjects/Tourism_Agency/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
@@ -67,7 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719064114118</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add project last version">
+      <option name="closed" value="true" />
+      <created>1719251375547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719251375547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +152,7 @@
     <MESSAGE value="Add Room View and  Employee operations edited." />
     <MESSAGE value="Add loadRoomTable, loadRoomComponent and Reservation register form" />
     <MESSAGE value="Add Reservation Table and  delete reservation operation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Reservation Table and  delete reservation operation." />
+    <MESSAGE value="Add project last version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add project last version" />
   </component>
 </project>

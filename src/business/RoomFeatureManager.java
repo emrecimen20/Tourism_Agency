@@ -6,7 +6,6 @@ import dao.RoomFeatureDao;
 import entity.HotelFeature;
 import entity.Pension;
 import entity.RoomFeature;
-
 import java.util.ArrayList;
 
 public class RoomFeatureManager {

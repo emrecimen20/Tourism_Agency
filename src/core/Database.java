@@ -11,6 +11,7 @@ public class Database {
     private final String DB_USERNAME = "postgres";
     private final String DB_PASSWORD = "130440";
 
+    // Database connection process.
 
     public Database() {
         try {

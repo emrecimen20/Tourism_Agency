@@ -19,6 +19,7 @@ public class Helper {
         }
     }
 
+    // Messages to be displayed during or after the transaction.
     public static void showMessage(String str) {
         String msg, title;
         switch (str) {
