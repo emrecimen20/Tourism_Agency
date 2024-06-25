@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="Add sql table">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="40b4d015-78e6-4ce2-85e0-55be5210ec3d" name="Changes" comment="update README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +161,39 @@
       <option name="project" value="LOCAL" />
       <updated>1719342610712</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add sql table">
+      <option name="closed" value="true" />
+      <created>1719343072858</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719343072858</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add sql table">
+      <option name="closed" value="true" />
+      <created>1719343110956</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719343110956</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1719343187090</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719343187090</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1719343337819</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719343337819</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +205,7 @@
     <MESSAGE value="Add project last version" />
     <MESSAGE value="Add English comment line and margin adjustments were made." />
     <MESSAGE value="Add sql table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sql table" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>
