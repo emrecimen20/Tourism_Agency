@@ -25,7 +25,7 @@ java --version
    ```
 4. Before establishing the database connection, update the username and password.
 
-## Secreenshots
+## Screenshots
 
 ![login](secreenshots/Login.png) ![searched_room_list](secreenshots/SearchedRoomList.png)
 ![add_user](secreenshots/addUser) ![add_reservations](secreenshots/AddReservation.png)
