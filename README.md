@@ -28,7 +28,7 @@ java --version
 ## Screenshots
 
 ![login](screenshots/Login.png) ![searched_room_list](screenshots/SearchedRoomList.png)
-![add_user](screenshots/addUser) ![add_reservations](screenshots/AddReservation.png)
+![add_user](screenshots/addUser.png) ![add_reservations](screenshots/AddReservation.png)
 ![user_list](screenshots/UserList.png) ![reservation_list](screenshots/ReservationList.png)
 ![hotel_table](screenshots/HotelsList.png) 
 ![season_list](screenshots/SeasonList.png) 
