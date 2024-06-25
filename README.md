@@ -27,12 +27,12 @@ java --version
 
 ## Screenshots
 
-![login](./secreenshots/Login.png) ![searched_room_list](secreenshots/SearchedRoomList.png)
-![add_user](secreenshots/addUser) ![add_reservations](secreenshots/AddReservation.png)
-![user_list](secreenshots/UserList.png) ![reservation_list](secreenshots/ReservationList.png)
-![hotel_table](secreenshots/HotelsList.png) 
-![season_list](secreenshots/SeasonList.png) 
-![room_list](secreenshots/RoomList.png) 
+![login](screenshots/Login.png) ![searched_room_list](screenshots/SearchedRoomList.png)
+![add_user](screenshots/addUser) ![add_reservations](screenshots/AddReservation.png)
+![user_list](screenshots/UserList.png) ![reservation_list](screenshots/ReservationList.png)
+![hotel_table](screenshots/HotelsList.png) 
+![season_list](screenshots/SeasonList.png) 
+![room_list](screenshots/RoomList.png) 
 
 
 
