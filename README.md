@@ -1,6 +1,10 @@
 # Tourism Agency System
 
 In this tourism agency system  application basic level hotel management, season management, room management, and reservation processes can be performed.
+
+## Purpose
+This project was developed for a hotel employee to control hotel, room and reservation adding processes. The user who is also an admin can manage other users.
+
 ## Technologies
 * Java 
 * Swing Framework
