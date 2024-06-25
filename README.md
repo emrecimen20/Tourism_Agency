@@ -27,7 +27,7 @@ java --version
 
 ## Screenshots
 
-![login](secreenshots/Login.png) ![searched_room_list](secreenshots/SearchedRoomList.png)
+![login](/.secreenshots/Login.png) ![searched_room_list](secreenshots/SearchedRoomList.png)
 ![add_user](secreenshots/addUser) ![add_reservations](secreenshots/AddReservation.png)
 ![user_list](secreenshots/UserList.png) ![reservation_list](secreenshots/ReservationList.png)
 ![hotel_table](secreenshots/HotelsList.png) 
